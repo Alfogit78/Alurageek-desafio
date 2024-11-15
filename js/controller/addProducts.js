@@ -24,7 +24,7 @@ function addProducts() {
     // Obtener el siguiente id
     let id;
     try {
-      const response = await fetch("http://localhost:3001/products");
+      const response = await fetch("https://673518f65995834c8a91e228.mockapi.io/products");
       const products = await response.json();
       const maxId = products.reduce(
         (max, product) => Math.max(max, parseInt(product.id, 10)),
@@ -54,7 +54,7 @@ function addProducts() {
     };
 
     // Realizar la solicitud POST a la API
-    fetch("http://localhost:3001/products", options)
+    fetch("https://673518f65995834c8a91e228.mockapi.io/products", options)
       .then((response) => {
         if (!response.ok) {
           throw new Error("La solicitud no fue exitosa");
