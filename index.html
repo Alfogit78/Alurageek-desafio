@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Alura Geek | G7 </title>
+
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <nav class="header">
+            <img src="./img/Logo.png" alt="corazones alura">
+            <h1>AluraGeek</h1>
+        </nav>
+    </header>
+
+    <section class="titulos-inicio">
+            <div id="margen-venta"><h2>CASAS EN VENTA</h2></div>
+            <div id="margen-listado"><h2>AGREGAR AL LISTADO</h2></div>
+    </section>
+    <div class="decorative-line"></div> <!-- Línea decorativa -->
+
+    <main>
+        <section id="containerProducts">
+            <div class="titulo-responsivo"><h2>CASAS EN VENTA</h2></div>
+            <div id="products">
+
+                <!-- AQUI SE IMPRIMEN LOS PRODUCTOS -->
+
+            </div>
+
+        </section>
+
+        <section id="containerForm">
+            <div class="titulo-responsivo"><h2>AGREGAR AL LISTADO</h2></div>
+            
+            <div id="formContent">
+                <form action="">
+                    <input id="nameProductForm" type="text" placeholder="Título..." maxlength="50" >
+                    <input id="priceProductForm" type="number" placeholder="Precio..." >
+                    <input id="imgProductForm" type="text" placeholder="Imagen...">
+                    <div class="btn-form">
+                        <button id="btnSend">Enviar</button>
+                        <button id="btnClean">Limpiar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="./img/Logo-personal.png" alt="corazones alura">
+            <h2>AluraGeek</h2>
+        </div>
+        <p>Desarrollado por Carlos Quintana - Alura Latam G7 2024</p>
+        
+    </footer>
+
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>

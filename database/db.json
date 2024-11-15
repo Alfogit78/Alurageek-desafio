@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "titulo": "Casa Cartagena",
+      "precio": 80,
+      "imagen": "https://i.postimg.cc/qvMDj0gD/Casa1.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Casa Medellín",
+      "precio": 60,
+      "imagen": "https://i.postimg.cc/MTWNDY8V/Casa2.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Casa Miami",
+      "precio": 100,
+      "imagen": "https://i.postimg.cc/0jj3g2jN/Casa3.jpg"
+    },
+    {
+      "id": "4",
+      "titulo": "Casa Bogotá",
+      "precio": 70,
+      "imagen": "https://i.postimg.cc/DfpHrsp4/Casa4.jpg"
+    },
+    {
+      "id": "5",
+      "titulo": "Casa Barranquilla",
+      "precio": "65,00",
+      "imagen": "https://i.postimg.cc/TPVK4rB0/Casa5.jpg"
+    }
+  ]
+}
