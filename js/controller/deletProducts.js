@@ -1,5 +1,5 @@
 function deleteProduct(productId) {
-  fetch(`http://localhost:3001/products/${productId}`, {
+  fetch(`https://673518f65995834c8a91e228.mockapi.io/products/${productId}`, {
     method: "DELETE",
   })
     .then((response) => {
