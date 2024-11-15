@@ -3,7 +3,7 @@ import { deleteProduct } from "./deletProducts.js";
 function printProducts() {
   let products = document.getElementById("products");
 
-  fetch("http://localhost:3001/products")
+  fetch("https://673518f65995834c8a91e228.mockapi.io/products")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((element) => {
