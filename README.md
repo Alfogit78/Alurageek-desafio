@@ -37,4 +37,4 @@
 <br>https://i.postimg.cc/SNSd6bgT/Casa7.jpg</p>
 
 ###
-<a href="https://alurageek-desafio.vercel.app/>Deploy de la API</a>.
+<a href="https://alurageek-desafio.vercel.app">Deploy de la API</a>.
