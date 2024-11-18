@@ -6,6 +6,39 @@ function addProducts() {
   let btnSend = form.querySelector("#btnSend");
   let btnClean = form.querySelector("#btnClean");
 
+  // Función para crear una tarjeta y agregarla al DOM
+  const appendProductToDOM = (product) => {
+    const productsContainer = document.getElementById("products");
+    
+    // Formatear el precio con coma y dos decimales
+    let formattedPrice = parseFloat(product.precio)
+      .toFixed(2)
+      .replace(".", ",");
+
+    const productHTML = `
+      <div class="cart" id="${product.id}">
+          <img src="${product.imagen}" alt="img-producto">
+          <p>${product.titulo}</p>
+          <div class="price">
+              <p>$ ${formattedPrice}</p>
+              <img src="../img/btn-borrar.svg" class="btn-delete" alt="Borrar producto">
+          </div>
+      </div>
+    `;
+
+    const div = document.createElement("div");
+    div.innerHTML = productHTML;
+
+    // Agregar evento de eliminación al botón
+    const deleteButton = div.querySelector(".btn-delete");
+    deleteButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      deleteProduct(product.id);
+    });
+
+    productsContainer.appendChild(div);
+  };
+
   // Event listener para el botón "Enviar"
   btnSend.addEventListener("click", async function (event) {
     event.preventDefault();
@@ -64,6 +97,10 @@ function addProducts() {
       .then((data) => {
         console.log("Producto añadido:", data);
         alert("Producto añadido exitosamente");
+
+        // Agregar el producto al DOM
+        appendProductToDOM(nuevoProducto);
+
         form.reset(); // Limpiar el formulario después de enviar
       })
       .catch((error) => {
