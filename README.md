@@ -32,7 +32,7 @@
 
 ###
 
-<p align="left">API fake con JS que simula la creacion de nuevas tarjetas (elementos) que deben ser agregados (boton enviar) y mostrados en la pantalla principal. Los nuevos elementos agregados seran visibles al refrescar la página. Para probar puede agregar una tarjeta con la imagen de la casa5 que está en esta dirección https://i.postimg.cc/TPVK4rB0/Casa5.jpg junto con un precio en formato de numero entero y un título, como se mencionó al refrescar la web aparecerá el elemento agregado. 
+<p align="left">API fake con JS que simula la creacion de nuevas tarjetas (elementos) que deben ser agregados (botón enviar) para ser mostrados en la pantalla principal. Para probar puede agregar una tarjeta con la imagen de una nueva casa, si bien puede agregar una imagen de su elección (guardada en una url), la sugerida corresponde con el formato de las que observa en el ejemplo. Para probar puede usar la siguiente url de una imagen https://i.postimg.cc/TPVK4rB0/Casa5.jpg junto con un precio en formato de numero entero y un título. El nuevo elemento cargará una vez de clic en el botón enviar.  
 <br>https://i.postimg.cc/SN6qHC41/Casa6.jpg 
 <br>https://i.postimg.cc/SNSd6bgT/Casa7.jpg</p>
 
