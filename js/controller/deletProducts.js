@@ -1,5 +1,5 @@
 function deleteProduct(productId) {
-  fetch(`https://673518f65995834c8a91e228.mockapi.io/products/${productId}`, {
+  fetch(`https://run.mocky.io/v3/3c332801-7abc-4109-b9ec-b7523c0bef57/${productId}`, {
     method: "DELETE",
   })
     .then((response) => {
