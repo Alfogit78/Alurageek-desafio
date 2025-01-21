@@ -57,7 +57,7 @@ function addProducts() {
     // Obtener el siguiente id
     let id;
     try {
-      const response = await fetch("https://673518f65995834c8a91e228.mockapi.io/products");
+      const response = await fetch("https://run.mocky.io/v3/3c332801-7abc-4109-b9ec-b7523c0bef57");
       const products = await response.json();
       const maxId = products.reduce(
         (max, product) => Math.max(max, parseInt(product.id, 10)),
@@ -87,7 +87,7 @@ function addProducts() {
     };
 
     // Realizar la solicitud POST a la API
-    fetch("https://673518f65995834c8a91e228.mockapi.io/products", options)
+    fetch("https://run.mocky.io/v3/3c332801-7abc-4109-b9ec-b7523c0bef57", options)
       .then((response) => {
         if (!response.ok) {
           throw new Error("La solicitud no fue exitosa");
